@@ -339,6 +339,8 @@ h3 {
     flex-direction: column;
     margin-right: 15px;
     flex-shrink: 0;
+    position: relative;
+
     /* background-color: blue; */
 }
 
@@ -363,4 +365,18 @@ h3 {
 .caroussel-site-category {
     /* background-color: paleturquoise; */
     font-size: 14px;
+}
+
+.hearth {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 50%;
+}
+
+.hearth > svg {
+    padding: 4px 0 0 3px;
 }
