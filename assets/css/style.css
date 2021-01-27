@@ -1,6 +1,10 @@
 /* ------------------- */
 /* GLOBAL */
 /* ------------------- */
+
+body {
+    font-family: "Trip Sans Regular";
+}
 .container {
     width: 1280px;
     margin: 0 auto;
@@ -37,6 +41,8 @@ h1 {
     height: 70px;
     /* background-color: blue; */
     font-size: 54px;
+    font-family: "Trip Sans Medium";
+    font-weight: bold;
 }
 
 .red-h1 {
@@ -143,7 +149,7 @@ header nav {
 }
 
 .nav3-left {
-    width: 645px;
+    width: 643px;
     /* background-color: aqua; */
 }
 
@@ -151,6 +157,7 @@ h2 {
     margin: 0 0 20px 0;
     font-size: 32px;
     font-weight: bold;
+    /* faudrait mettre fonte Georgia */
 }
 
 .cityDescription {
@@ -159,7 +166,7 @@ h2 {
 }
 
 .nav3-right {
-    width: 528px;
+    width: 530px;
     /* background-color: #ff5d5d; */
     display: flex;
     flex-direction: column;
@@ -168,18 +175,20 @@ h2 {
 .nav3-right-top {
     height: 213px;
     background-color: #ff5d5d;
-    padding: 10px 30px 0px 30px;
+    padding: 10px 23px 0px 23px;
     border-radius: 15px 15px 0px 0px; /* haut-gauche haut-droit bas-gauche bas-doite */
 }
 
 h3 {
     font-size: 34px;
-    margin-top: 10px;
-    margin-bottom: 0;
+    margin-top: 20px;
+    margin-bottom: 17px;
+    font-weight: bold;
 }
 
 .nav3-right-top > p {
     font-size: 18px;
+    margin-bottom: 17px;
 }
 
 #create-travel-button {
