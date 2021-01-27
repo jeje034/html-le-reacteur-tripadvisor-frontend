@@ -1,13 +1,30 @@
 /* ------------------- */
 /* GLOBAL */
 /* ------------------- */
+:root {
+    --travel-tips-text-size: 450px;
+    --unmissing-in-town-text-size: 480px;
+    --container-width: 1280px;
+}
 
 body {
     font-family: "Trip Sans Regular";
 }
+
 .container {
-    width: 1280px;
+    width: var(--container-width);
     margin: 0 auto;
+}
+
+.display-all-link {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.display-all-link:hover {
+    text-decoration: underline;
 }
 
 /* ------------------- */
@@ -146,6 +163,7 @@ header nav {
     height: 425px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 80px;
 }
 
 .nav3-left {
@@ -214,6 +232,142 @@ h3 {
 /* CONSEILS DE VOYAGE */
 /* ------------------- */
 
+.section-separator-block {
+    height: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #ff5d5d; */
+}
+
+.travel-tips-title {
+    width: var(--travel-tips-text-size);
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    /* background-color: green; */
+}
+
+.travel-tips-separation {
+    border: black solid 1px;
+    width: calc(var(--container-width) - var(--travel-tips-text-size));
+    height: 0px;
+}
+
+#link-to-all-travel-tips {
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: #ff5d5d; */
+    margin-bottom: 30px;
+}
+
+#links-to-some-travel-tips {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+#links-to-some-travel-tips > div {
+    width: 290px;
+    height: 75px;
+    border: black;
+    display: flex;
+    align-items: center;
+    /* background-color: #ff5d5d; */
+    padding: 0 0px 0 10px;
+    border: grey solid 2px;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+#links-to-some-travel-tips > div > i > img {
+    height: 75px;
+}
+
 /* ------------------- */
 /* IMMANQUABLE A PARIS */
 /* ------------------- */
+
+#UnmissibleInTown-title {
+    width: var(--unmissing-in-town-text-size);
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    /* background-color: green; */
+}
+#unmissing-in-town-separation {
+    border: black solid 1px;
+    width: calc(var(--container-width) - var(--unmissing-in-town-text-size));
+    height: 0px;
+}
+
+#entertainment {
+    display: flex;
+}
+
+#entertainment-text {
+    width: 300px;
+    /* background-color: #ff5d5d; */
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#entertainment-text-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#entertainment-text-text {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+#entertainment-text-link {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+#entertainment-right {
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+#entertainment-right-1,
+#entertainment-right-2,
+#entertainment-right-3,
+#entertainment-right-4,
+#entertainment-right-5 {
+    width: 305px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    flex-shrink: 0;
+    /* background-color: blue; */
+}
+
+.caroussel-image {
+    /* background-color: aquamarine; */
+}
+.caroussel-image > img {
+    width: 305px;
+    height: 202px;
+    object-fit: cover;
+    padding-bottom: 5px;
+}
+
+.caroussel-site-name {
+    /* background-color: red; */
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.caroussel-site-grade {
+    /* background-color: pink; */
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+.caroussel-site-category {
+    /* background-color: paleturquoise; */
+    font-size: 14px;
+}
