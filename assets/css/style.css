@@ -70,15 +70,17 @@ header nav {
 .nav2 > div > div {
     margin-right: 5px;
 }
+
+/* DEBUT 1ER PAVE D'IMAGES */
 .pictures {
     /*    height: 300px;*/
     /* background-color: red; */
     display: flex;
     justify-content: space-between;
-    /* width: 1280px; */
+    margin-bottom: 40px;
 }
 .pictures-col1 > img {
-    width: 780px;
+    width: 790px;
     height: 430px;
     object-fit: cover;
     border-radius: 10px 0 0 10px;
@@ -87,7 +89,7 @@ header nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 498px;
+    width: 488px;
     height: 430px;
 }
 #pictures-col21 {
@@ -113,3 +115,71 @@ header nav {
 #pictures-col22 > img {
     border-radius: 0 0 10px 0;
 }
+/* FIN 1ER PAVE D'IMAGES */
+
+/* DEBUT NAV 3 */
+.nav3 {
+    height: 425px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav3-left {
+    width: 645px;
+    /* background-color: aqua; */
+}
+
+h2 {
+    margin: 0 0 0 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.cityDescription {
+    color: grey;
+    font-size: 23px;
+}
+
+.nav3-right {
+    width: 528px;
+    background-color: #ff5d5d;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav3-right-top {
+    height: 213px;
+    background-color: #ff5d5d;
+    padding: 10px 30px 0px 30px;
+}
+
+h3 {
+    font-size: 34px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.nav3-right-top > p {
+    font-size: 18px;
+}
+
+#create-travel-button {
+    color: white;
+    background-color: black;
+    padding: 10px 12px 12px 10px;
+    border-radius: 18px;
+}
+
+#nav3-right-bottom {
+    height: 213px;
+    background-color: aqua;
+}
+
+#nav3-right-bottom > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FIN NAV 3*/
