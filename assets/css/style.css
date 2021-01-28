@@ -29,6 +29,13 @@ body {
 }
 
 /* ------------------- */
+/* GLOBAL SPECIAL MEDIA QUERIES*/
+/* ------------------- */
+.hidden-on-desktop {
+    display: none;
+}
+
+/* ------------------- */
 /* HEADER */
 /* ------------------- */
 header {
@@ -407,4 +414,20 @@ footer {
     justify-content: center;
     height: 70px;
     background-color: #faf1ed;
+}
+
+/* ------------------- */
+/* MEDIA QUERIES */
+/* ------------------- */
+@media (max-width: 1327px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        background-color: #ff5d5d;
+    }
+    .hidden-on-desktop {
+        display: block;
+    }
 }
