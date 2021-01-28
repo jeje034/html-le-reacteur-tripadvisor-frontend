@@ -154,35 +154,40 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    height: 430px;
+    /* background-color: red; */
+}
+.pictures-col1 {
+    width: calc(75% - 1px);
     /* background-color: red; */
 }
 .pictures-col1 > img {
-    width: 790px;
-    height: 430px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px 0 0 10px;
 }
-.pictures-col2 {
+#pictures-col2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 488px;
-    height: 430px;
+    width: calc(25% - 1px);
+    height: 100%;
 }
 #pictures-col21 {
     width: 100%;
-    height: 214px;
-    /* background-color: #ff5d5d; */
+    height: calc(50% - 1px);
+    /* background-color: purple; */
 }
 #pictures-col22 {
     width: 100%;
-    height: 214px;
+    height: calc(50% - 1px);
     /* background-color: aqua; */
 }
 
-.pictures-col2 img {
+#pictures-col2 img {
     width: 100%;
-    height: 213px;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -449,15 +454,21 @@ Ecrans :
     - big-screen      : 1024 -> 1327
     - very-big-screen : 1328 -> ?
 
-Nav 1 (Publier par exemple):
+Nav 1 (Publier par exemple) :
     - small-screen           : 0 -> 767     : menu hamburger au lieu des boutons
     - medium-screen          : 768 -> 1023  : pas de texte sur les 3 "boutons avec icone"
     - big et very-big-screen : 1024 et plus : texte sur les 3 "boutons avec icone"
 
- Nav 2 (Conseil de voyage par exemple):     
+ Nav 2 (Conseil de voyage par exemple) :     
     - small-screen                              : 0 -> 767 : 1 ligne de boutons de navigation
     - medium-screen et big-screen : 768 -> 1327 : 2 lignes de boutons de navigation
     - very-big-screen                           : 1328 - infini : 1 ligne de boutons de navigation
+
+ 1 à 3 Grosses images :
+    - small-screen    : ?    - 767  : 1 image  : 276
+    - medium-screen   : 768  - 1023 : 3 images : 270
+    - big-screen      : 1024 - 1327 : 3 images : 372
+    - very-big-screen : 1328 - ?    : 430
 */
 
 /* very-bigscreen
@@ -467,6 +478,10 @@ Pas de media query, c'est la dimension par défaut */
 @media (min-width: 1024px) and (max-width: 1327px) {
     .container {
         width: 100%;
+    }
+
+    .pictures {
+        height: 372px;
     }
 
     .visible-on-small-screen {
@@ -497,6 +512,10 @@ Pas de media query, c'est la dimension par défaut */
 @media (min-width: 768px) and (max-width: 1023px) {
     .container {
         width: 100%;
+    }
+
+    .pictures {
+        height: 270px;
     }
 
     .visible-on-small-screen {
@@ -532,6 +551,16 @@ Pas de media query, c'est la dimension par défaut */
 @media (max-width: 767px) {
     .container {
         width: 100%;
+    }
+
+    .pictures {
+        height: 276px;
+    }
+    .pictures-col1 {
+        width: 100%;
+    }
+    #pictures-col2 {
+        display: none;
     }
 
     .visible-on-small-screen {
