@@ -25,6 +25,7 @@ body {
 
 .display-all-link:hover {
     text-decoration: underline;
+    color: grey;
 }
 
 /* ------------------- */
@@ -95,17 +96,15 @@ h1 {
 /* ------------------- */
 .nav2 {
     height: 70px;
-    /* background-color: cadetblue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 0 20px 0;
+    /* background-color: cadetblue; */
 }
 
 .nav2 > div {
     display: flex;
-    /* color: #ff5d5d; */
-    /*flex: 1;*/
     width: 140px;
     height: 56px;
     border: 2px solid black;
@@ -123,11 +122,10 @@ h1 {
 /* GROSSES IMAGES DU HAUT */
 /* ------------------- */
 .pictures {
-    /*    height: 300px;*/
-    /* background-color: red; */
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    /* background-color: red; */
 }
 .pictures-col1 > img {
     width: 790px;
@@ -185,20 +183,23 @@ h1 {
 h2 {
     margin: 0 0 20px 0;
     font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.6px;
     font-weight: bold;
-    /* faudrait mettre fonte Georgia */
 }
 
 .cityDescription {
-    color: grey;
-    font-size: 23px;
+    color: #474747;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .nav3-right {
     width: 530px;
-    /* background-color: #ff5d5d; */
     display: flex;
     flex-direction: column;
+    /* background-color: #ff5d5d; */
 }
 
 .nav3-right-top {
@@ -269,8 +270,8 @@ h3 {
 #link-to-all-travel-tips {
     display: flex;
     justify-content: flex-end;
-    /* background-color: #ff5d5d; */
     margin-bottom: 30px;
+    /* background-color: #ff5d5d; */
 }
 
 #links-to-some-travel-tips {
@@ -285,11 +286,11 @@ h3 {
     border: black;
     display: flex;
     align-items: center;
-    /* background-color: #ff5d5d; */
     padding: 0 0px 0 10px;
     border: grey solid 2px;
     border-radius: 12px;
     font-size: 20px;
+    /* background-color: #ff5d5d; */
 }
 
 #links-to-some-travel-tips > div > i > img {
@@ -319,11 +320,11 @@ h3 {
 }
 
 #entertainment-text {
-    width: 300px;
-    /* background-color: #ff5d5d; */
+    width: calc(33%);
     margin-right: 30px;
     display: flex;
     flex-direction: column;
+    /* background-color: #ff5d5d; */
 }
 
 #entertainment-text-title {
@@ -334,6 +335,9 @@ h3 {
 #entertainment-text-text {
     margin-bottom: 20px;
     font-size: 18px;
+    color: #474747;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 21.6px;
 }
 #entertainment-text-link {
     margin-bottom: 20px;
@@ -346,7 +350,7 @@ h3 {
     overflow-x: scroll;
 }
 .entertainment-right-x {
-    width: 305px;
+    width: calc(33% - 15px / 3); /* 33% moins la marge  */
     display: flex;
     flex-direction: column;
     margin-right: 15px;
@@ -356,26 +360,28 @@ h3 {
 }
 
 .caroussel-image > img {
-    width: 305px;
+    width: 100%;
     height: 202px;
     object-fit: cover;
     padding-bottom: 5px;
 }
 
 .caroussel-site-name {
-    /* background-color: red; */
     font-size: 18px;
     font-weight: bold;
     padding-bottom: 5px;
+    /* background-color: red; */
 }
 .caroussel-site-grade {
-    /* background-color: pink; */
     font-size: 14px;
     padding-bottom: 5px;
+    color: #474747;
+    /* background-color: pink; */
 }
 .caroussel-site-category {
-    /* background-color: paleturquoise; */
     font-size: 14px;
+    line-height: 16.8px;
+    /* background-color: paleturquoise; */
 }
 
 .hearth {
