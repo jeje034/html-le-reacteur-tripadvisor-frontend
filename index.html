@@ -12,61 +12,70 @@
         <script src="https://kit.fontawesome.com/bb54014cd5.js"></script>
     </head>
     <body>
-        <!-- container avant le header depuis que le header est en position fixed
-     => todo virer le container après le header
-    
-    1328 1 ligne de nav, 1327 2 lignes de nav
-    -->
         <div class="container">
             <header>
-                <div class="container">
-                    <div class="logo">
-                        <img
-                            src="./assets/img/Tripadvisor_lockup_horizontal_secondary_registered.svg"
-                            alt="Logo TripAdvisor"
-                        />
-                    </div>
-                    <nav>
-                        <div class="nav1">
-                            <img
-                                src="./assets/img/Plus.PNG"
-                                alt="icône plus (publier)"
-                            />
-                            <span>&nbsp;Publier</span>
-                        </div>
-
-                        <div class="nav1">
-                            <img
-                                src="./assets/img/Cloche.PNG"
-                                alt="icône cloche (alertes)"
-                            />
-                            <span>&nbsp;Alertes</span>
-                        </div>
-                        <div class="nav1">
-                            <img
-                                src="./assets/img/Coeur.PNG"
-                                alt="icône voyage (coeur)"
-                            />
-                            <span>&nbsp;Voyages</span>
-                        </div>
-                        <button id="connection-button">Connectez-vous</button>
-                    </nav>
+                <div class="visible-on-small-screen">
+                    <img
+                        src="./assets/img/HamburgerMenu.jpg"
+                        alt="Hamburger menu"
+                    />
                 </div>
+                <div class="logo">
+                    <img
+                        src="./assets/img/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+                        alt="Logo TripAdvisor"
+                    />
+                </div>
+                <div class="visible-on-small-screen">
+                    <img
+                        src="./assets/img/MagnifyingGlass.jpg"
+                        alt="Loupe (pour recherche)"
+                    />
+                </div>
+                <nav class="hidden-on-small-screen">
+                    <div class="nav1">
+                        <img
+                            src="./assets/img/Plus.PNG"
+                            alt="icône plus (publier)"
+                        />
+                        <span class="hidden-on-medium-screen"
+                            >&nbsp;Publier</span
+                        >
+                    </div>
+
+                    <div class="nav1">
+                        <img
+                            src="./assets/img/Cloche.PNG"
+                            alt="icône cloche (alertes)"
+                        />
+                        <span class="hidden-on-medium-screen"
+                            >&nbsp;Alertes</span
+                        >
+                    </div>
+                    <div class="nav1">
+                        <img
+                            src="./assets/img/Coeur.PNG"
+                            alt="icône voyage (coeur)"
+                        />
+                        <span class="hidden-on-medium-screen"
+                            >&nbsp;Voyages</span
+                        >
+                    </div>
+                    <button id="connection-button">Connectez-vous</button>
+                </nav>
             </header>
         </div>
         <div class="container">
             <h1><span class="red-h1">Explorez</span> Paris</h1>
             <nav class="nav2">
                 <!-- Groupe de 4 "boutons" de "navigation" -->
-                <div class="group-of-4-or-3" id="width-57-desktop">
+                <div class="group-of-4-or-3" id="width-57-very-big-screen">
                     <div>
                         <div>Conseils de voyage</div>
-                        <div>
-                            <img
-                                src="./assets/img/FlagForTravelTips.jpg"
-                                alt="Drapeau (pour conseils de voyage)"
-                            />
-                        </div>
+                        <img
+                            src="./assets/img/FlagForTravelTips.jpg"
+                            alt="Drapeau (pour conseils de voyage)"
+                        />
                     </div>
                     <div>
                         <div>Hotels</div>
@@ -92,7 +101,7 @@
                 </div>
 
                 <!-- En fonction de la taille de l'écran, groupe de 4 ou 3 "boutons" de "navigation" -->
-                <div class="group-of-4-or-3" id="width-43-desktop">
+                <div class="group-of-4-or-3" id="width-43-very-big-screen">
                     <div>
                         <div>Restaurants</div>
                         <img
@@ -107,7 +116,7 @@
                             alt="Bulles de BD (pour forums de voyage)"
                         />
                     </div>
-                    <div class="hidden-on-desktop">
+                    <div class="hidden-on-very-big-screen">
                         <div>Vols</div>
                         <img
                             src="./assets/img/PlaneForFlight.png"
