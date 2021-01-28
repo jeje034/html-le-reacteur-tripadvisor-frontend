@@ -32,8 +32,15 @@ body {
 /* ------------------- */
 header {
     height: 50px;
-    /* background-color: yellow; */
-    margin-bottom: 30px;
+
+    /* Je constate que c'est inutile en position: fixed : margin-bottom: 30px;
+    => margin-bottom sur l'élément suivant (le h1).*/
+
+    position: fixed;
+    top: 0;
+    background-color: white;
+
+    /* background-color: rebeccapurple; */
 }
 
 header .container {
@@ -54,17 +61,6 @@ header .container {
 nav img {
     height: 20px;
 }
-h1 {
-    height: 70px;
-    /* background-color: blue; */
-    font-size: 54px;
-    font-family: "Trip Sans Medium";
-    font-weight: bold;
-}
-
-.red-h1 {
-    color: #ff5d5d;
-}
 
 header nav {
     display: flex;
@@ -79,9 +75,24 @@ header nav {
 }
 
 /* ------------------- */
+/* H1 */
+/* ------------------- */
+h1 {
+    height: 70px;
+    font-size: 54px;
+    font-family: "Trip Sans Medium";
+    font-weight: bold;
+    margin-top: 80px;
+    /* background-color: blue; */
+}
+
+.red-h1 {
+    color: #ff5d5d;
+}
+
+/* ------------------- */
 /* 2EME BARRE DE NAVIGATION */
 /* ------------------- */
-
 .nav2 {
     height: 70px;
     /* background-color: cadetblue; */
@@ -304,6 +315,7 @@ h3 {
 
 #entertainment {
     display: flex;
+    margin-bottom: 90px;
 }
 
 #entertainment-text {
@@ -340,7 +352,6 @@ h3 {
     margin-right: 15px;
     flex-shrink: 0;
     position: relative;
-
     /* background-color: blue; */
 }
 
@@ -379,4 +390,15 @@ h3 {
 
 .hearth > svg {
     padding: 4px 0 0 3px;
+}
+
+/* ------------------- */
+/* PIED */
+/* ------------------- */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background-color: #faf1ed;
 }
