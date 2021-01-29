@@ -158,7 +158,7 @@ h1 {
     /* background-color: red; */
 }
 .pictures-col1 {
-    width: calc(75% - 1px);
+    width: calc(62% - 1px);
     /* background-color: red; */
 }
 .pictures-col1 > img {
@@ -171,7 +171,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: calc(25% - 1px);
+    width: calc(38% - 1px);
     height: 100%;
 }
 #pictures-col21 {
@@ -199,18 +199,19 @@ h1 {
 }
 
 /* ------------------- */
-/* DESCRIPTION DE LA VILLE */
+/* DESCRIPTION ET ORGANISATION */
 /* ------------------- */
 
-.nav3 {
+.description-and-organization {
     height: 425px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
 }
 
-.nav3-left {
-    width: 643px;
+.description {
+    width: 50%;
+    /* margin-right: 70px; */
     /* background-color: aqua; */
 }
 
@@ -222,52 +223,62 @@ h2 {
     font-weight: bold;
 }
 
-.cityDescription {
+.description-p {
     color: #474747;
     font-size: 20px;
     line-height: 24px;
     font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.nav3-right {
-    width: 530px;
+.organization {
+    width: calc(50% - 120px);
     display: flex;
     flex-direction: column;
-    /* background-color: #ff5d5d; */
+    /* border: orange solid 2px; */
+    /* box-sizing: border-box; */
+    /* background-color: blue; */
 }
 
-.nav3-right-top {
-    height: 213px;
+.organization-top {
+    height: 50%;
     background-color: #ff5d5d;
-    padding: 10px 23px 0px 23px;
+    padding: 10px 30px 0px 30px;
     border-radius: 15px 15px 0px 0px; /* haut-gauche haut-droit bas-gauche bas-doite */
 }
 
 h3 {
-    font-size: 34px;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    font-weight: bold;
     margin-top: 20px;
     margin-bottom: 17px;
-    font-weight: bold;
 }
 
-.nav3-right-top > p {
-    font-size: 18px;
+.organization-top > p {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
     margin-bottom: 17px;
 }
 
 #create-travel-button {
     color: white;
     background-color: black;
-    padding: 10px 10px 10px 10px;
+    padding: 15px 15px 15px 15px;
     border-radius: 18px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-weight: bold;
 }
 
-#nav3-right-bottom {
-    height: 213px;
+#organization-map {
+    height: 50%;
     background-color: aqua;
 }
 
-#nav3-right-bottom > img {
+#organization-map > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -319,7 +330,6 @@ h3 {
 #links-to-some-travel-tips > div {
     width: 290px;
     height: 75px;
-    border: black;
     display: flex;
     align-items: center;
     padding: 0 0px 0 10px;
@@ -483,8 +493,10 @@ Nav 1 (Publier par exemple) :
     - medium-screen   : 768  - 1023 : 3 images, height 270
     - small-screen    : ?    - 767  : 1 image, height 276
 
-Section description ville :
+Section description et organisation :
     - big et very-big-screen : 1024 - ∞    : block création voyage et plan à droite.
+        + very-big : largeur 525 hauteur 425
+        + big      : largeur 493 hauteur 465
     - medium-screen          : 768  - 1023 : block création voyage et plan en bas avec plan à droite.
     - small-screen           : ?    - 768  : block création voyage et plan en bas avec plan en bas.
 
@@ -526,6 +538,16 @@ Pas de media query, c'est la dimension par défaut */
     .nav2 .hidden-on-very-big-screen {
         display: inherit;
     }
+
+    .description-and-organization {
+        height: 465px;
+    }
+    .organization-top {
+        height: 60%;
+    }
+    .organization-map {
+        height: 40%;
+    }
 }
 
 /* medium-screen */
@@ -565,6 +587,21 @@ Pas de media query, c'est la dimension par défaut */
 
     .nav2 .hidden-on-very-big-screen {
         display: inherit;
+    }
+
+    .description-and-organization {
+        /* height: 425px; */
+        display: inherit;
+        /* justify-content: space-between; */
+    }
+    .description-and-organization {
+        height: 465px;
+    }
+    .organization-top {
+        height: 60%;
+    }
+    .organization-map {
+        height: 40%;
     }
 }
 
@@ -614,5 +651,17 @@ Pas de media query, c'est la dimension par défaut */
     .group-of-4-or-3 > div > div {
         display: inline;
         /* background-color: #ff5d5d; */
+    }
+
+    .description-and-organization {
+        height: 465px;
+        display: inherit;
+        /* justify-content: space-between; */
+    }
+    .organization-top {
+        height: 60%;
+    }
+    .organization-map {
+        height: 40%;
     }
 }
