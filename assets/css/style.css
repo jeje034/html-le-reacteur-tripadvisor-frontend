@@ -4,7 +4,7 @@
 :root {
     --travel-tips-text-size: 450px;
     --unmissing-in-town-text-size: 480px;
-    --container-width: 1280px;
+    --container-width-very-big-screen: 1280px;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    width: var(--container-width);
+    width: var(--container-width-very-big-screen);
     margin: 0 auto;
 }
 
@@ -297,7 +297,9 @@ h3 {
 
 .travel-tips-separation {
     border: black solid 1px;
-    width: calc(var(--container-width) - var(--travel-tips-text-size));
+    width: calc(
+        var(--container-width-very-big-screen) - var(--travel-tips-text-size)
+    );
     height: 0px;
 }
 
@@ -344,7 +346,10 @@ h3 {
 }
 .unmissing-in-town-separation {
     border: black solid 1px;
-    width: calc(var(--container-width) - var(--unmissing-in-town-text-size));
+    width: calc(
+        var(--container-width-very-big-screen) -
+            var(--unmissing-in-town-text-size)
+    );
     height: 0px;
 }
 
@@ -449,26 +454,40 @@ footer {
 
 /*
 Ecrans :
-    - small-screen    : ?    -> 767 
-    - medium-screen   : 768  -> 1023
+    - very-big-screen : 1328 -> ∞
     - big-screen      : 1024 -> 1327
-    - very-big-screen : 1328 -> ?
+    - medium-screen   : 768  -> 1023
+    - small-screen    : ?    -> 767 
+
+
+container 1080 + marges = 1270 => marge = 95px
+
+container :
+    - very-big-screen      : width 1280 margin 0 auto
+    - big et medium-screen : width inherit margin 24px
+    - small-screen         : width inherit margin 0
 
 Nav 1 (Publier par exemple) :
-    - small-screen           : 0 -> 767     : menu hamburger au lieu des boutons
-    - medium-screen          : 768 -> 1023  : pas de texte sur les 3 "boutons avec icone"
-    - big et very-big-screen : 1024 et plus : texte sur les 3 "boutons avec icone"
+    - big et very-big-screen : 1024 -> -∞   : texte sur les 3 "boutons avec icone"
+    - medium-screen          : 768 - > 1023 : pas de texte sur les 3 "boutons avec icone"
+    - small-screen           : 0 -   > 767  : menu hamburger au lieu des boutons
 
  Nav 2 (Conseil de voyage par exemple) :     
-    - small-screen                              : 0 -> 767 : 1 ligne de boutons de navigation
-    - medium-screen et big-screen : 768 -> 1327 : 2 lignes de boutons de navigation
-    - very-big-screen                           : 1328 - infini : 1 ligne de boutons de navigation
+    - very-big-screen             : 1328 -> ∞    : 1 ligne de boutons de navigation
+    - medium-screen et big-screen : 768  -> 1327 : 2 lignes de boutons de navigation
+    - small-screen                : 0    -> 767  : 1 ligne de boutons de navigation
 
  1 à 3 Grosses images :
-    - small-screen    : ?    - 767  : 1 image  : 276
-    - medium-screen   : 768  - 1023 : 3 images : 270
-    - big-screen      : 1024 - 1327 : 3 images : 372
-    - very-big-screen : 1328 - ?    : 430
+    - very-big-screen : 1328 - ∞    : 3 images, height 430
+    - big-screen      : 1024 - 1327 : 3 images, height 372
+    - medium-screen   : 768  - 1023 : 3 images, height 270
+    - small-screen    : ?    - 767  : 1 image, height 276
+
+Section description ville :
+    - big et very-big-screen : 1024 - ∞    : block création voyage et plan à droite.
+    - medium-screen          : 768  - 1023 : block création voyage et plan en bas avec plan à droite.
+    - small-screen           : ?    - 768  : block création voyage et plan en bas avec plan en bas.
+
 */
 
 /* very-bigscreen
@@ -477,7 +496,8 @@ Pas de media query, c'est la dimension par défaut */
 /* big-screen */
 @media (min-width: 1024px) and (max-width: 1327px) {
     .container {
-        width: 100%;
+        width: inherit;
+        margin: 0 24px;
     }
 
     .pictures {
@@ -511,7 +531,8 @@ Pas de media query, c'est la dimension par défaut */
 /* medium-screen */
 @media (min-width: 768px) and (max-width: 1023px) {
     .container {
-        width: 100%;
+        width: inherit;
+        margin: 0 24px;
     }
 
     .pictures {
@@ -551,6 +572,7 @@ Pas de media query, c'est la dimension par défaut */
 @media (max-width: 767px) {
     .container {
         width: 100%;
+        margin: 0 0;
     }
 
     .pictures {
