@@ -10,9 +10,59 @@
 
         <!-- Utilise le compte fontawesome du Reacteur -->
         <script src="https://kit.fontawesome.com/bb54014cd5.js"></script>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./assets/js/modal-connection.js"></script>
     </head>
     <body>
         <div class="container">
+            <!-- Modal de connexion -->
+            <div id="modal-connection-background">
+                <div id="modal-content">
+                    <!-- Croix pour fermer la modal -->
+                    <span class="close">&times;</span>
+
+                    <p>Formulaire de contact</p>
+
+                    <form id="contactForm">
+                        <input
+                            type="text"
+                            name="firstname"
+                            id="firstname"
+                            value=""
+                            placeholder="Prénom"
+                        />
+                        <input
+                            type="text"
+                            name="lastname"
+                            id="lastname"
+                            value=""
+                            placeholder="Nom"
+                        />
+                        <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            value=""
+                            placeholder="Email"
+                        />
+                        <input
+                            type="text"
+                            name="subject"
+                            id="subject"
+                            value=""
+                            placeholder="Sujet"
+                        />
+                        <textarea
+                            name="message"
+                            id="message"
+                            placeholder="Décrivez-vous en quelques lignes"
+                        ></textarea>
+                        <button type="submit">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+
             <header>
                 <div class="visible-on-small-screen">
                     <img
