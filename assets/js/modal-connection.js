@@ -55,7 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     sendButton.classList.add("send-button-enabled");
                     contactForm.reset();
                     sendMessage.classList.remove("send-message-hidden");
-                    // title.classList.add("less-padding-on-connection-title");
                     // console.log(title.classList);
                 } catch (error) {
                     alert("Erreur en envoi des données : " + error.message);

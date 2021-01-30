@@ -129,8 +129,7 @@ textarea {
 }
 
 .send-button-disabled {
-    /* background-color: #b4f5e6; */
-    background-color: red;
+    background-color: #b4f5e6;
 }
 
 .send-message-information {
@@ -193,6 +192,7 @@ nav img {
     padding: 10px 15px;
     border-radius: 20px;
     margin: 0 0 0 10px;
+    cursor: pointer;
 }
 
 /* ------------------- */
