@@ -22,7 +22,14 @@
                     <!-- Croix pour fermer la modal -->
                     <span class="close">&times;</span>
 
-                    <p>Formulaire de contact</p>
+                    <p id="modal-connection-title">Formulaire de contact</p>
+
+                    <div
+                        class="send-message-information send-message-hidden"
+                        id="divSendMessage"
+                    >
+                        Le message a bien été envoyé.
+                    </div>
 
                     <form id="contactForm">
                         <input
@@ -58,7 +65,13 @@
                             id="message"
                             placeholder="Décrivez-vous en quelques lignes"
                         ></textarea>
-                        <button type="submit">Envoyer le message</button>
+                        <button
+                            type="submit"
+                            id="sendButton"
+                            class="send-button-enabled"
+                        >
+                            Envoyer le message
+                        </button>
                     </form>
                 </div>
             </div>
